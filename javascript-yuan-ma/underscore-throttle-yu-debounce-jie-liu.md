@@ -1,4 +1,4 @@
-在看 underscore.js 源码的时候，接触到了这样两个方法，很有意思：
+在看 underscore.js 源码的时候，接触到了这样两个方法，很有意思：
 
 我先把实现的代码撂在下面，看不懂的可以先跳过，但是跳过可不是永远跳过哦～
 
@@ -165,53 +165,45 @@ _.debounce = function(func, wait, immediate) {
   };
 ```
 
-
-
 在开发过程中，经常会遇到处理频率很高的事件或着连续的事件，比如像在 window 的 resize/scroll 事件调用某个事件 A 等，如果不进行处理，这个时候伴随着resize就会执行无数个 事件A ,若事件 A 是个很复杂的函数，需要较多的运算执行时间，响应速度跟不上触发频率，往往会出现延迟，导致假死或者卡顿感，并且很多情况下并不是需要“如此”夸张的频繁调用事件 A。
 
 下面 gif 录制了一个频繁调用 事件 A 的例子：
 
-!\[gif\]\(http://g.recordit.co/DDSbAVb57z.gif\)
+![](http://g.recordit.co/DDSbAVb57z.gif)
 
-我们可以想办法来解决这样的问题，一种方式就是规定一个时间间隔 wait ，每隔固定 wait 固定执行一次函数 A，也就是我们要说的 throttle 方法，另一种方式则是在连续事件结束之后开始 过一个时间间隔 wait 执行一次函数 A，也就是我们要说的 debounce方法。
+我们可以想办法来解决这样的问题，一种方式就是规定一个时间间隔 wait ，每隔固定 wait 固定执行一次函数 A，也就是我们要说的 throttle 方法，另一种方式则是在连续事件结束之后开始 过一个时间间隔 wait 执行一次函数 A，也就是我们要说的 debounce方法。
 
 针对例子 resize 来解释（ 假设时间间隔5s ）：
 
-　　　　throttle 方法：在 resize 的过程中，每隔5s执行一次函数 A；
+throttle 方法：在 resize 的过程中，每隔5s执行一次函数 A；
 
-　　　　debounce方法：在 resize 结束之后，过了 5s ，执行一次函数 A，如果没有到 5s ，就又开始 resize ，那么就重新计时，并不执行函数 A；
-
-
+debounce方法：在 resize 结束之后，过了 5s ，执行一次函数 A，如果没有到 5s ，就又开始 resize ，那么就重新计时，并不执行函数 A；
 
 如果我的这个解释没有理解，那么很有一个很多人用的电梯的例子与生活结合在一起会更加形象，在这里也引用一下：
 
-想象每天上班大厦底下的电梯。把电梯完成一次运送，类比为一次函数的执行和响应。假设电梯有两种运行方法 `throttle`和 `debounce` ，超时设定为15秒，不考虑容量限制。
+想象每天上班大厦底下的电梯。把电梯完成一次运送，类比为一次函数的执行和响应。假设电梯有两种运行方法 `throttle`和 `debounce` ，超时设定为15秒，不考虑容量限制。
 
 * `throttle`
-   方法的电梯。保证如果电梯第一个人进来后，15秒后准时运送一次，不等待。如果没有人，则待机。
+   方法的电梯。保证如果电梯第一个人进来后，15秒后准时运送一次，不等待。如果没有人，则待机。
 * `debounce`
-   方法的电梯。如果电梯里有人进来，等待15秒。如果又人进来，15秒等待重新计时，直到15秒超时，开始运送。
-
-
+   方法的电梯。如果电梯里有人进来，等待15秒。如果又人进来，15秒等待重新计时，直到15秒超时，开始运送。
 
 下面就逐一说一下两个方法：
 
-1、 throttle 方法：
+1、 throttle 方法：
 
-　　 Underscore.js 中 针对这个方法 传入三个参数：func 即你要在密集事件内调用的函数，也就是例子中的 事件 A，wait 即时间间隔，而第三个参数 options 可以传两种选项，一种是  {leading: false}，表示你想禁用第一次首先执行函数 A，如果不传，就表示你想上来先调用一次 函数 A，另一种是 {trailing: false}，表示想禁用最后一次执行函数 A ；  
+Underscore.js 中 针对这个方法 传入三个参数：func 即你要在密集事件内调用的函数，也就是例子中的 事件 A，wait 即时间间隔，而第三个参数 options 可以传两种选项，一种是  {leading: false}，表示你想禁用第一次首先执行函数 A，如果不传，就表示你想上来先调用一次 函数 A，另一种是 {trailing: false}，表示想禁用最后一次执行函数 A ；  
 ![](/assets/111116import.png)
 
-（此图来自 http://benalman.com/projects/jquery-throttle-debounce-plugin/）
+（此图来自 [http://benalman.com/projects/jquery-throttle-debounce-plugin/）](http://benalman.com/projects/jquery-throttle-debounce-plugin/）)
 
 2、debounce 方法
 
-　　Underscore.js 中 针对这个方法 传入三个参数：func 即你要在密集事件内调用的函数，也就是例子中的 事件 A，wait 即时间间隔，而第三个参数 immediate 可以传 true 或者 false。传为 true， debounce 会在 wait 时间间隔的开始调用这个函数 （注：并且在 waite 的时间之内，不会再次调用）。在类似不小心点了提交按钮两下而提交了两次的情况下很有用。
+Underscore.js 中 针对这个方法 传入三个参数：func 即你要在密集事件内调用的函数，也就是例子中的 事件 A，wait 即时间间隔，而第三个参数 immediate 可以传 true 或者 false。传为 true， debounce 会在 wait 时间间隔的开始调用这个函数 （注：并且在 waite 的时间之内，不会再次调用）。在类似不小心点了提交按钮两下而提交了两次的情况下很有用。
 
 ![](/assets/1111116import.png)
 
-（此图来自 http://benalman.com/projects/jquery-throttle-debounce-plugin/，图中 at\_begain 即可看为 immediate ）
-
-
+（此图来自 [http://benalman.com/projects/jquery-throttle-debounce-plugin/，图中](http://benalman.com/projects/jquery-throttle-debounce-plugin/，图中) at\_begain 即可看为 immediate ）
 
 两者使用方法类似：
 
@@ -227,38 +219,31 @@ $(window).on('resize', _.throttle(doSomething, 300));
 
 最后，两者既然有区别，那么也有针对不同场景下更好的选择方法：
 
-
-
 throttle：
 
- 　　1、DOM 元素动态定位，window 对象的 resize 和 scroll 事件，比如：用户在你无限滚动的页面上向下拖动，你需要判断现在距离页面底部多少。如果用户快接近底部时，我们应该发送请求来加载更多内容到页面。
+1、DOM 元素动态定位，window 对象的 resize 和 scroll 事件，比如：用户在你无限滚动的页面上向下拖动，你需要判断现在距离页面底部多少。如果用户快接近底部时，我们应该发送请求来加载更多内容到页面。
 
-　　 2、如果用户在 30s 内 input 输入非常块，但你想固定每间隔 5s 就进行一次某个事情。
+2、如果用户在 30s 内 input 输入非常块，但你想固定每间隔 5s 就进行一次某个事情。
 
 debounce：
 
-　　 1、AutoComplete中的Ajax请求使用的keypress
+1、AutoComplete中的Ajax请求使用的keypress
 
-　　 2、在进行input校验的时候，“你的密码太短”等类似的信息。
-
-
+2、在进行input校验的时候，“你的密码太短”等类似的信息。
 
 其实选择哪个方法主要取决于你是否想确保在固定的时间间隔进行回调。
 
-
-
 别忘了再回头研究一下最上方的源码。
 
-  
--------------------
+---
 
 参考并感谢：
 
-[https://segmentfault.com/a/1190000004909376  ](https://segmentfault.com/a/1190000004909376)  里面有例子，大家可以进去试试
+[https://segmentfault.com/a/1190000004909376  ](https://segmentfault.com/a/1190000004909376)  里面有例子，大家可以进去试试
 
 [http://benalman.com/projects/jquery-throttle-debounce-plugin/](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
 
 [https://blog.coding.net/blog/the-difference-between-throttle-and-debounce-in-underscorejs](https://blog.coding.net/blog/the-difference-between-throttle-and-debounce-in-underscorejs)
 
-[ http://drupalmotion.com/article/debounce-and-throttle-visual-explanation](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation)
+[ http://drupalmotion.com/article/debounce-and-throttle-visual-explanation](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation)
 
