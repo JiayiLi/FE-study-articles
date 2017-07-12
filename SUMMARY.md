@@ -4,7 +4,7 @@
 
 ## Javascript 基础
 * [作用域和闭包](javascript基础/zuo-yong-yu-he-bi-bao.md)
-* [“继承”](javasript基础/201c-ji-cheng-201d.md)
+* [“继承”](javascript基础/201c-ji-cheng-201d.md)
 * [为什么 call 比 apply 快？](javascript基础/wei-shi-yao-call-bi-apply-kuai-ff1f.md)
 * [深浅拷贝](javascript基础/shen-qian-kao-bei.md)
 * [setTimeout\(fn, 0\) 的作用](javascript基础/settimeoutfn-0-de-zuo-yong.md)
