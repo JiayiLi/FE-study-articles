@@ -21,3 +21,4 @@
 
 
 ## 工具类
+* [如何使用Git上传本地项目到github?(mac版)](工具/gitmanage.md)
