@@ -75,7 +75,7 @@ then 执行命令 `git commit -m "第一次更新"`
 
 <br>
 <br>
-一些有可能遇到的问题以及参考网站：
-＊mac多个git账户配置：http://www.jianshu.com/p/fbbf6efb50ba
-＊cannot push to github ,keeps saying need merge: http://stackoverflow.com/questions/10298291/cannot-push-to-github-keeps-saying-need-merge
-＊删除github远程分支：https://my.oschina.net/tsingxu/blog/84601
+一些有可能遇到的问题以及参考网站： 
+＊mac多个git账户配置：http://www.jianshu.com/p/fbbf6efb50ba </br>
+＊cannot push to github ,keeps saying need merge: http://stackoverflow.com/questions/10298291/cannot-push-to-github-keeps-saying-need-merge  </br>
+＊删除github远程分支：https://my.oschina.net/tsingxu/blog/84601  </br>

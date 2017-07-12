@@ -20,6 +20,8 @@
 
 
 ## 工具类
+* [如何在Github Pages搭建自己写的页面？](工具/githubmanage.md)
 * [如何使用Git上传本地项目到github?(mac版)](工具/gitmanage.md)
+
 
 
