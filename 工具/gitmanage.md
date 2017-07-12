@@ -19,24 +19,25 @@
 
 当你出现如图所示，就代表 ssh 已经生成了。
 这个执行命令：`pbcopy < ~/.ssh/id_test_rsa.pub`   这个的作用是将你的 ssh 代码复制到剪贴板。
-
-现在，咱们在重新回到 github 页面，需要将刚才生成的 ssh 配置到 github 里。点击你的呆萌头像：
 ![Alt text](/assets/git7.png)
 
-然后点击 settings 设置：
+现在，咱们在重新回到 github 页面，需要将刚才生成的 ssh 配置到 github 里。点击你的呆萌头像：
 ![Alt text](/assets/git8.png)
 
-点击配置 ssh：
+然后点击 settings 设置：
 ![Alt text](/assets/git9.png)
 
-点击新建 New SSH key:
+点击配置 ssh：
 ![Alt text](/assets/git10.png)
 
-直接 Crl＋v 将刚才你已经复制在剪贴板里的 ssh 复制到 key input 里面，title 你随意起喽。然后点击 Add SSH key.
+点击新建 New SSH key:
 ![Alt text](/assets/git11.png)
 
-现在，咱们再打开终端，验证一下是否添加ssh成功了，输入命令： `ssh -T git@github.com`
+直接 Crl＋v 将刚才你已经复制在剪贴板里的 ssh 复制到 key input 里面，title 你随意起喽。然后点击 Add SSH key.
 ![Alt text](/assets/git12.png)
+
+现在，咱们再打开终端，验证一下是否添加ssh成功了，输入命令： `ssh -T git@github.com`
+![Alt text](/assets/git13.png)
 
 出现如上图的句子，你就起来跳个舞。倘若是类似如下的句子：
 
