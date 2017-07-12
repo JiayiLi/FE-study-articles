@@ -14,5 +14,12 @@
 * [源码设计 （持续更新）](javascript-yuan-ma/yuan-ma-she-ji-ff08-chi-xu-geng-xin-ff09.md)
 * [underscore throttle 与 debounce 节流](javascript-yuan-ma/underscore-throttle-yu-debounce-jie-liu.md)
 
+
+## Javascript 算法
+* [这么全的数组去重，你怕不怕？](/javascript%E7%AE%97%E6%B3%95/shuzuquchong.md)
+
+
 ## 工具类
+
+
 
