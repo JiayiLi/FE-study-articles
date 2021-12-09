@@ -1,1 +1,120 @@
-<mxfile host="app.diagrams.net" modified="2021-12-09T07:50:28.947Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" version="15.9.4" etag="Ou77FVseYJ4d7xJhJFqo" type="github"><diagram id="L0tbru3oIgSTwDIcVxD4">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-12-09T16:12:35.096Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" etag="1EWzBhRqHJ6uOzRUB40F" version="15.9.4" type="github">
+  <diagram id="L0tbru3oIgSTwDIcVxD4" name="Page-1">
+    <mxGraphModel dx="1689" dy="2137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-15" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="-230" width="2020" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-17" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="-200" width="410" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=0;fontSize=28;fontColor=#EA6B66;strokeWidth=1;" edge="1" parent="1" source="AnKNK1yi1sCMLef1qgw7-2" target="AnKNK1yi1sCMLef1qgw7-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-2" value="createWatchOfConfigFile" style="whiteSpace=wrap;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="950" y="235" width="330" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-3" value="isWatchSet&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="825" y="235" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-4" value="!!options.watch" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="800" y="267.5" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-5" value="" style="whiteSpace=wrap;html=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="1346" y="120" width="484" height="258.75" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AnKNK1yi1sCMLef1qgw7-6" target="AnKNK1yi1sCMLef1qgw7-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1880" y="166" />
+              <mxPoint x="1880" y="-130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-6" value="const watchCompilerHost = createWatchCompilerHostOfFilesAndCompilerOptions" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;strokeColor=default;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1363" y="135.75" width="450" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-7" value="return createWatchProgram(watchCompilerHost)" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="287.5" width="450" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="AnKNK1yi1sCMLef1qgw7-7" target="AnKNK1yi1sCMLef1qgw7-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-8" value="updateWatchCompilationHost(system, cb, watchCompilerHost)" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;strokeColor=default;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="209" width="450" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="AnKNK1yi1sCMLef1qgw7-10" target="AnKNK1yi1sCMLef1qgw7-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-10" value="const host = createWatchCompilerHost(system" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1995" y="-160" width="375" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-12" value="host.rootFiles = rootFiles;" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1995" y="-82.5" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-13" value="host.options = options;" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="2180" y="-75" width="180" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-14" value="return host;" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1995" y="-10" width="375" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-16" value="watch.ts" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="-260" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-18" value="&lt;div style=&quot;color: rgb(201 , 209 , 217) ; background-color: rgb(13 , 17 , 23) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace , , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 21px&quot;&gt;&lt;span style=&quot;color: #d2a8ff&quot;&gt;createWatchCompilerHostOfFilesAndCompilerOptions()&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="-200" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-19" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2435" y="-200" width="410" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-20" value="&lt;div style=&quot;color: rgb(201 , 209 , 217) ; background-color: rgb(13 , 17 , 23) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace , , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 21px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace , , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 21px&quot;&gt;&lt;span style=&quot;color: #d2a8ff&quot;&gt;createWatchCompilerHost&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2442.5" y="-200" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="AnKNK1yi1sCMLef1qgw7-21" target="AnKNK1yi1sCMLef1qgw7-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-21" value="const result = createProgramHost()" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="2455" y="-160" width="375" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-22" value="return result" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="2452.5" y="-100" width="375" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-23" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2870" y="-200" width="410" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-24" value="&lt;div style=&quot;color: rgb(201 , 209 , 217) ; background-color: rgb(13 , 17 , 23) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace , , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 21px&quot;&gt;&lt;div style=&quot;font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace , , &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 21px&quot;&gt;&lt;span style=&quot;color: #d2a8ff&quot;&gt;createWatchCompilerHost&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2877.5" y="-200" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="1" source="AnKNK1yi1sCMLef1qgw7-25" target="AnKNK1yi1sCMLef1qgw7-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-25" value="const result = createProgramHost()" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="2890" y="-160" width="375" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-26" value="return result" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="2887.5" y="-100" width="375" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-29" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3342.5" y="-210" width="410" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-30" value="createProgramHost" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="3350" y="-195" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-31" value="return  {getDefaultLibFileName, fileExists,readFile}" style="whiteSpace=wrap;fontSize=17;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="3360" y="-160" width="375" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-34" value="" style="whiteSpace=wrap;html=1;fontSize=17;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1960" y="284" width="420" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-36" value="program.ts&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1960" y="249" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AnKNK1yi1sCMLef1qgw7-37" value="&lt;span style=&quot;font-size: 17px&quot;&gt;createWatchProgram&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="2070" y="310" width="180" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
